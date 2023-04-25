@@ -1,0 +1,204 @@
+html{height: 100%;}
+*{  margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(252, 255, 251);
+    position: relative;
+     min-height: 100vh;
+
+
+}
+header{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    height: auto;
+    background-color: rgb(134, 120, 224);
+
+} 
+main{
+    position: relative;
+
+
+
+
+}
+footer{
+background-color: brown;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+height:3 em;
+margin:auto;
+}
+
+
+nav{                         /*establece color de fondo de la linea de los botones*/
+    background-color: rgb(32, 149, 181);
+  }
+  input {                        /*no muestra el botón de menu */
+    display: none;     
+  }
+  label {                       /*no muestra la etiqueta ☰ */
+      display:none;
+  }
+  ul{                           /*muestra los botones con la disposición horizontal para notebook */
+    display: flex;
+    justify-content:space-around;
+    margin-top:0;
+    padding: 0;
+   
+  
+  }
+  
+  
+  li {                     /*determina la propiedad de cada botón*/
+    display: block;
+    background: rgb(186, 200, 208);
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid rgb(7, 12, 68);
+    width: 200px;
+    text-align: center;
+  }
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+  li:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
+    filter: brightness(110%);
+  }
+  
+  
+  
+  
+.TituloPrincipal{
+text-align: center;
+padding: 5px;
+}
+.contenedor{
+    margin: 0 auto;
+ 
+}
+
+.imgpresentacion{
+   width: 50%;
+    border-radius: 20px; 
+     box-shadow: 10px 10px 5px rgb(90, 91, 91);
+}
+
+.TituloPagina{
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.contenedorflex{
+    display: flex;
+    justify-content:space-around;
+    
+} 
+.cajaintegrante{
+    background-color: rgb(3, 20, 52);
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow:10px 10px 5px rgb(90, 91, 91);
+    text-align: center;
+
+}
+.fotointegrante{
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+
+} 
+.NombreIntegrante{
+ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: rgb(227, 217, 217);
+    text-align: center;
+    
+    
+
+}
+.textoflex{
+    margin: 2em;
+}
+@media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
+  
+    input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+    display:block;
+      }
+  
+      input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+      background: lightgrey; 
+          }
+  
+      label:hover{                /*cambia el color de ☰ */
+      background: grey;
+      }
+  
+    li{                         /*elimina el margen  de cada botón */
+         margin: 0px;
+         text-align: left;
+     }
+  
+     label {                      /* dibuja la etiqueta ☰  con formato botón */
+       box-sizing: border-box;
+       display: block;
+       border: 1px solid black;
+       border-radius: 5px;
+       width: 30px;
+       height: 30px;
+       line-height: 30px;
+       font-weight: bold;
+       text-align: center;
+       user-select: none;
+       background-color: cadetblue;
+  
+        }
+      
+  
+    ul{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
+       display: none;
+       background-color:white;
+  
+      }
+     .contenedorflex{
+        flex-direction: column;
+        justify-content: center;
+     }  
+  }
+  ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  ul li a:hover{
+    color: rgb(0, 4, 255);
+  }
+
+.footer1{
+        background: #0a0130;
+        height: 118px;
+        width: 100%;
+        bottom: 0px;
+        position: absolute;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        box-sizing: border-box;
+}
+
+.texto{
+    text-align: center;
+    font-size: larger; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+
+}
